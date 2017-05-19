@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+
+// variables
+
+$maincolor: rgb(144, 58, 170);
+$maincolor: black;
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', cursive;
+  box-sizing: border-box;
+  color: black;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.title h1 {
+  padding: 0;
+  padding-left: 12px;
+  font-size: 12em;
+  margin: 60px 0 60px 0;
+  font-weight: 600;
+  color: $maincolor;
+  
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  
+  &-box {
+    flex-grow: 1;
+    height: 600px;
+    width: 25%;
+    min-width: 400px;
+    margin: 30px;
+    
+    &-thumb {
+      height: 80%;
+      width: 100%;
+      background-image: url('http://www.fillmurray.com/500/600');
+    }
+    
+    &-title {
+      color: $maincolor;
+      margin: 30px 0;
+      font-weight: 100;
+      font-size: 2em;
+      h2 {
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        margin: 0;
+      }
+    }
+  }
+}
